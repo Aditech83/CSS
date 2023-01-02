@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css margin </title>
+    <style>
+        div{
+            
+            background-color: lightblue;
+            color: black;
+            margin-top: 100px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+            margin-left: 80px;
+            border: 2px solid black;
+
+           /* (margin short-hand) margin:100px,150px,100px,80px;  */
+           /* margin:20px(for all directions)*/
+           /* margin:auto; (auto to the horizontal center)*/
+           /* margin-left:inherit;()*/
+        }
+
+        .div1{
+            border:1px solid black;
+            margin-left: 100px;
+
+        }
+        .p1{
+            margin-left: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, molestias. Sequi magnam consequuntur totam perspiciatis, itaque obcaecati, nihil ipsum iste fugit quo modi inventore eius repudiandae, tempora facere. Ipsam accusamus odio corrupti, iusto dicta mollitia harum et id vero voluptates at.</p>
+    </div>
+
+    <h1>Use the inherit value</h1>
+        <p>here left margin is inherited from parent parent element.</p>
+
+    <div class="div1">
+        
+        <p class="p1" >This paragraph has an inherited left margin from the div element.</p>
+        
+    </div>
+    
+    <hr width="1000px" align="left" size="1px">
+    <hr width="1000px" align="right" size="1px">
+    <hr width="1000px" align="center" size="1px">
+
+    <p color="yellow">this is a paragraph</p>
+</body>
+</html>

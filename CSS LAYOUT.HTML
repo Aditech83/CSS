@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LAYOUT</title>
+    <STYLE>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0;
+        }
+
+        /* style the header */
+        .header{
+            background-color: #140966;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+
+        /* style the top navigation bar */
+        .nav{
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        /* style  the nav links */
+
+        .nav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 5px;
+            text-decoration: none;
+        }
+
+        /* change color on hover */
+        .nav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active{
+            background-color: #5f5896;
+        }
+
+        /* create three equal columns that floats next to each other */
+        .col{
+            float: left;
+            width: 25%;
+            padding: 15px;   
+        }
+
+        
+        /* for responsive layouts */
+        @media screen and (max-width:600px){
+            .col{
+                width: 100%;
+            }
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="header">
+        <h1>UNIQUE SCHOOL</h1>
+        <p>PANAPUR DHARAMPUR,HAJIPUR(VAISHALI)</p>
+    </div>
+
+    <div class="nav">
+        <a class="active" href="#c">Home</a>
+        <a href="#c1">About Us</a>
+        <a href="#c2">Contact </a>
+        <a href="#c3">News</a>
+        <a href="#c4">Features</a>
+    </div>
+
+    <div class="row">
+        
+
+        <div class="col" id="c1">
+            <h2>About Us</h2>
+            <p> UNIQUE SCHOOL is opened in 2017.Dr.O.P SRIVASTAVA is the chairman of this school. Mrs. Punam Kumari is the director of this scool.Miss
+                Aprajita Srivastava is the principal of this school. </p>
+        </div>
+
+        <div class="col" id="c2">
+            <h2>Contact</h2>
+            <p>Mob:-9955670226 , 8987098497 </p>
+            <p>email:- uniqueschool@gmail.com</p>
+            
+        </div>
+       
+       
+        <div class="col" id="c3">
+            <h2>News</h2>
+            <p>Admission open from <mark>25 Dec 2022.</mark></p>
+            <p>First 50 Admission free</p>
+            <p>fee Rs500 from class Play to Nurs.</p>
+        </div>
+        
+        <div class="col" id="c4">
+            <h2>Features</h2>
+            <p>Spoken English Course availabel here.</p>
+            <p>Computer class</p>
+            <p>yoga class</p>
+            <p>dance class</p>
+            <p>skill development </p>
+        </div>
+
+
+    </div>
+</body>
+</html>
